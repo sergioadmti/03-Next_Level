@@ -1,0 +1,79 @@
+
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap";
+
+    /* Aplicando conceito de variáveis no CSS */
+    :root {
+        --color-green: #50fa7b; /*Define uma variável p/ uma cor e depois chama a variável em cada elemento q será aplicado. */
+    }
+
+    /* Desabilita atributos padronizados pelo agent user. */
+    * { 
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background: #282a36;
+        font-family: 'Source Sans Pro', sans-serif; /*Atributo inserido em conjunto com o estilo de fontes google*/
+        color: white;
+    }
+    header {
+        padding: 32px;
+        border: 1px solid #333;
+        margin: 30px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Define os estilos da div dentro do header */
+    .links {
+        text-align: center;
+    }
+
+    .links a {
+        font-size: 18px;
+        line-height: 28px; /* Proporção de 10px de diferença entre os dois atributos. */
+        margin: 0 16px; /*Definido como top/bottom=0px e right/left=16px */
+        padding-bottom: 3px;
+        text-decoration: none;
+    }
+
+    .links a:hover {
+        color: var(--color-green);
+        transition: color 200ms;
+    }
+
+    #wrapper {
+        text-align: center;
+        padding: 32px;
+    }
+
+    #wrapper img {
+        border-radius: 50%;
+        border: 5px solid  #4b2370;
+        margin-bottom: 32px;
+    }
+
+    #wrapper h1 {
+        font-size: 42px;
+        line-height: 47px;
+        font-weight: bold;
+    }
+
+    #wrapper h2 {
+        font-size: 24px;
+        font-weight: normal;
+        margin-top: 4px;
+        opacity: 0.6;
+    }
+
+    #wrapper p {
+        max-width: 600px;
+        margin: 10px auto;
+        font-size: 20px;
+
+    }
+
+    #wrapper p a {
+        color: var(--color-green);
+    }
